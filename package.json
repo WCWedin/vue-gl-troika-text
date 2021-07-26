@@ -1,0 +1,60 @@
+{
+  "name": "vue-gl-troika-text",
+  "version": "0.1.0",
+  "description": "A VueGL component for Troika Three Text meshes.",
+  "author": "Ibby Wedin <wcwedin@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wcwedin/vue-gl-troika-text.git"
+  },
+  "module": "dist/vue-gl-troika-text.mjs",
+  "types": "dist/vue-gl-troika-text.d.ts",
+  "files": [
+    "/dist/"
+  ],
+  "scripts": {
+    "build": "rollup --config",
+    "prepare": "rollup --config"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.4",
+    "@rollup/plugin-eslint": "^8.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "eslint": "^7.31.0",
+    "eslint-plugin-vue": "^7.14.0",
+    "rollup": "^2.53.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "three": "^0.111.0",
+    "troika-three-text": "^0.42.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5",
+    "vue": "^2.2.0",
+    "vue-gl": "^0.22.1"
+  },
+  "peerDependencies": {
+    "three": "^0.111.0",
+    "troika-three-text": "^0.42.0",
+    "vue-gl": "^0.22.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:vue/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "ignorePatterns": [
+      "dist"
+    ]
+  }
+}
