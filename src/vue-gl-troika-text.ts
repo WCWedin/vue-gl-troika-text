@@ -267,7 +267,7 @@ interface TroikaTextProps {
    * which is treated as a percentage of the `fontSize`.
    */
   strokeWidth: string | number
-  
+
   /**
    * @default 0x808080
    * WARNING: This API is experimental and may change.
@@ -327,7 +327,7 @@ interface TroikaTextProps {
   glyphGeometryDetail: number
 
   /**
-   * @default null 
+   * @default null
    * The size of each glyph's SDF (signed distance field) used for rendering. This must be a
    * power-of-two number. Defaults to 64 which is generally a good balance of size and quality
    * for most fonts. Larger sizes can improve the quality of glyph rendering by increasing
@@ -394,127 +394,127 @@ const TroikaText = (Vue.extend(VglMesh) as VueConstructor<VglMeshType>).extend<n
   },
 
   watch: {
-    text(this: TroikaTextType, text: TroikaTextProps["text"]): void {
+    text(this: TroikaTextType, text: TroikaTextProps['text']): void {
       this.inst.text = text
       this.inst.sync()
     },
-    anchorX(this: TroikaTextType, anchorX: TroikaTextProps["anchorX"]): void {
+    anchorX(this: TroikaTextType, anchorX: TroikaTextProps['anchorX']): void {
       this.inst.anchorX = anchorX
       this.inst.sync()
     },
-    anchorY(this: TroikaTextType, anchorY: TroikaTextProps["anchorY"]): void {
+    anchorY(this: TroikaTextType, anchorY: TroikaTextProps['anchorY']): void {
       this.inst.anchorY = anchorY
       this.inst.sync()
     },
-    curveRadius(this: TroikaTextType, curveRadius: TroikaTextProps["curveRadius"]): void {
+    curveRadius(this: TroikaTextType, curveRadius: TroikaTextProps['curveRadius']): void {
       this.inst.curveRadius = curveRadius
       this.vglObject3d.emit()
     },
-    direction(this: TroikaTextType, direction: TroikaTextProps["direction"]): void {
+    direction(this: TroikaTextType, direction: TroikaTextProps['direction']): void {
       this.inst.direction = direction
       this.inst.sync()
     },
-    font(this: TroikaTextType, font: TroikaTextProps["font"]): void {
+    font(this: TroikaTextType, font: TroikaTextProps['font']): void {
       this.inst.font = font
       this.inst.sync()
     },
-    fontSize(this: TroikaTextType, fontSize: TroikaTextProps["fontSize"]): void {
+    fontSize(this: TroikaTextType, fontSize: TroikaTextProps['fontSize']): void {
       this.inst.fontSize = fontSize
       this.inst.sync()
     },
-    letterSpacing(this: TroikaTextType, letterSpacing: TroikaTextProps["letterSpacing"]): void {
+    letterSpacing(this: TroikaTextType, letterSpacing: TroikaTextProps['letterSpacing']): void {
       this.inst.letterSpacing = letterSpacing
       this.inst.sync()
     },
-    lineHeight(this: TroikaTextType, lineHeight: TroikaTextProps["lineHeight"]): void {
+    lineHeight(this: TroikaTextType, lineHeight: TroikaTextProps['lineHeight']): void {
       this.inst.lineHeight = lineHeight
       this.inst.sync()
     },
-    maxWidth(this: TroikaTextType, maxWidth: TroikaTextProps["maxWidth"]): void {
+    maxWidth(this: TroikaTextType, maxWidth: TroikaTextProps['maxWidth']): void {
       this.inst.maxWidth = maxWidth
       this.inst.sync()
     },
-    overflowWrap(this: TroikaTextType, overflowWrap: TroikaTextProps["overflowWrap"]): void {
+    overflowWrap(this: TroikaTextType, overflowWrap: TroikaTextProps['overflowWrap']): void {
       this.inst.overflowWrap = overflowWrap
       this.inst.sync()
     },
-    textAlign(this: TroikaTextType, textAlign: TroikaTextProps["textAlign"]): void {
+    textAlign(this: TroikaTextType, textAlign: TroikaTextProps['textAlign']): void {
       this.inst.textAlign = textAlign
       this.inst.sync()
     },
-    textIndent(this: TroikaTextType, textIndent: TroikaTextProps["textIndent"]): void {
+    textIndent(this: TroikaTextType, textIndent: TroikaTextProps['textIndent']): void {
       this.inst.textIndent = textIndent
       this.inst.sync()
     },
-    whiteSpace(this: TroikaTextType, whiteSpace: TroikaTextProps["whiteSpace"]): void {
+    whiteSpace(this: TroikaTextType, whiteSpace: TroikaTextProps['whiteSpace']): void {
       this.inst.whiteSpace = whiteSpace
       this.inst.sync()
     },
-    color(this: TroikaTextType, color: TroikaTextProps["color"]): void {
+    color(this: TroikaTextType, color: TroikaTextProps['color']): void {
       this.inst.color = color
       this.vglObject3d.emit()
     },
-    colorRanges(this: TroikaTextType, colorRanges: TroikaTextProps["colorRanges"]): void {
+    colorRanges(this: TroikaTextType, colorRanges: TroikaTextProps['colorRanges']): void {
       this.inst.colorRanges = colorRanges
       this.inst.sync()
     },
-    outlineWidth(this: TroikaTextType, outlineWidth: TroikaTextProps["outlineWidth"]): void {
+    outlineWidth(this: TroikaTextType, outlineWidth: TroikaTextProps['outlineWidth']): void {
       this.inst.outlineWidth = outlineWidth
       this.vglObject3d.emit()
     },
-    outlineColor(this: TroikaTextType, outlineColor: TroikaTextProps["outlineColor"]): void {
+    outlineColor(this: TroikaTextType, outlineColor: TroikaTextProps['outlineColor']): void {
       this.inst.outlineColor = outlineColor
       this.vglObject3d.emit()
     },
-    outlineOpacity(this: TroikaTextType, outlineOpacity: TroikaTextProps["outlineOpacity"]): void {
+    outlineOpacity(this: TroikaTextType, outlineOpacity: TroikaTextProps['outlineOpacity']): void {
       this.inst.outlineOpacity = outlineOpacity
       this.vglObject3d.emit()
     },
-    outlineBlur(this: TroikaTextType, outlineBlur: TroikaTextProps["outlineBlur"]): void {
+    outlineBlur(this: TroikaTextType, outlineBlur: TroikaTextProps['outlineBlur']): void {
       this.inst.outlineBlur = outlineBlur
       this.vglObject3d.emit()
     },
-    outlineOffsetX(this: TroikaTextType, outlineOffsetX: TroikaTextProps["outlineOffsetX"]): void {
+    outlineOffsetX(this: TroikaTextType, outlineOffsetX: TroikaTextProps['outlineOffsetX']): void {
       this.inst.outlineOffsetX = outlineOffsetX
       this.vglObject3d.emit()
     },
-    outlineOffsetY(this: TroikaTextType, outlineOffsetY: TroikaTextProps["outlineOffsetY"]): void {
+    outlineOffsetY(this: TroikaTextType, outlineOffsetY: TroikaTextProps['outlineOffsetY']): void {
       this.inst.outlineOffsetY = outlineOffsetY
       this.vglObject3d.emit()
     },
-    strokeWidth(this: TroikaTextType, strokeWidth: TroikaTextProps["strokeWidth"]): void {
+    strokeWidth(this: TroikaTextType, strokeWidth: TroikaTextProps['strokeWidth']): void {
       this.inst.strokeWidth = strokeWidth
       this.vglObject3d.emit()
     },
-    strokeColor(this: TroikaTextType, strokeColor: TroikaTextProps["strokeColor"]): void {
+    strokeColor(this: TroikaTextType, strokeColor: TroikaTextProps['strokeColor']): void {
       this.inst.strokeColor = strokeColor
       this.vglObject3d.emit()
     },
-    strokeOpacity(this: TroikaTextType, strokeOpacity: TroikaTextProps["strokeOpacity"]): void {
+    strokeOpacity(this: TroikaTextType, strokeOpacity: TroikaTextProps['strokeOpacity']): void {
       this.inst.strokeOpacity = strokeOpacity
       this.vglObject3d.emit()
     },
-    fillOpacity(this: TroikaTextType, fillOpacity: TroikaTextProps["fillOpacity"]): void {
+    fillOpacity(this: TroikaTextType, fillOpacity: TroikaTextProps['fillOpacity']): void {
       this.inst.fillOpacity = fillOpacity
       this.vglObject3d.emit()
     },
-    depthOffset(this: TroikaTextType, depthOffset: TroikaTextProps["depthOffset"]): void {
+    depthOffset(this: TroikaTextType, depthOffset: TroikaTextProps['depthOffset']): void {
       this.inst.depthOffset = depthOffset
       this.vglObject3d.emit()
     },
-    clipRect(this: TroikaTextType, clipRect: TroikaTextProps["clipRect"]): void {
+    clipRect(this: TroikaTextType, clipRect: TroikaTextProps['clipRect']): void {
       this.inst.clipRect = nullableParser(parseFloatArray)(clipRect)
       this.vglObject3d.emit()
     },
-    orientation(this: TroikaTextType, orientation: TroikaTextProps["orientation"]): void {
+    orientation(this: TroikaTextType, orientation: TroikaTextProps['orientation']): void {
       this.inst.orientation = orientation
       this.vglObject3d.emit()
     },
-    glyphGeometryDetail(this: TroikaTextType, glyphGeometryDetail: TroikaTextProps["glyphGeometryDetail"]): void {
+    glyphGeometryDetail(this: TroikaTextType, glyphGeometryDetail: TroikaTextProps['glyphGeometryDetail']): void {
       this.inst.glyphGeometryDetail = glyphGeometryDetail
       this.vglObject3d.emit()
     },
-    sdfGlyphSize(this: TroikaTextType, sdfGlyphSize: TroikaTextProps["sdfGlyphSize"]): void {
+    sdfGlyphSize(this: TroikaTextType, sdfGlyphSize: TroikaTextProps['sdfGlyphSize']): void {
       this.inst.sdfGlyphSize = sdfGlyphSize
       this.inst.sync()
     },
